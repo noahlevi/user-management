@@ -11,7 +11,7 @@ init_config()
 # configure_logging()
 log.info('Initialization done')
 
-app = FastAPI(docs_url=Config.c.app.docs_url)
+app = FastAPI(docs_url=Config.c.app.docs_url, title="UserAPI")
 
 
 # app.include_router(healthcheck.router)
