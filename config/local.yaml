@@ -1,0 +1,12 @@
+app:
+  debug: true
+  log_level: INFO
+  docs_url: "/docs"
+  jwt_secret_key: "86c89694a660ef3c39164f6d7054a07a962892c5"
+  jwt_refresh_secret_key: "e1a467f8b85397855dc40c9cf2d93ecba27d6f8f"
+  algorithm: "HS256"
+  access_token_expire_mins: 30
+  refresh_token_expire_mins: 60
+
+mongo:
+  dsn: 'mongodb://root:root@user-management-mongodb-1/users_db?authSource=admin'
